@@ -1,9 +1,9 @@
 This is the Project Work done by
 
-1. Jayasuryaa G R
-2. Viboosithasri N S
-3. Shri Priyadharshini P
-4. Sowmiya S
+<li>Jayasuryaa G R</li>
+<li>Viboosithasri N S</li>
+<li>Shri Priyadharshini P</li>
+<li>Sowmiya S</li>
 
-Team ID: PNT2022TMID12764 <br/>
-Project: Real-Time Communication System Powered by AI for Specially Abled
+<b>Team ID:</b> PNT2022TMID12764 <br/>
+<b>Project:</b> Real-Time Communication System Powered by AI for Specially Abled
