@@ -4,3 +4,6 @@ This is the Project Work done by
 2. Viboosithasri N S
 3. Shri Priyadharshini P
 4. Sowmiya S
+
+Team ID: PNT2022TMID12764
+Project: Real-Time Communication System Powered by AI for Specially Abled
