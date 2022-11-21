@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div style="width: 50%; text-align: center;">
+                    <!-- <div style="width: 50%; height: auto;"> -->
+                        {% if var %}
+                        <img style="max-width: 100%; height: auto; text-align: center;" id="img" src="{{ url_for('video_feed') }}">
+                        {% else %}
+                        <img style="max-width: 100%; height: auto; text-align: center;" id="img" src="{{ url_for('static', filename='img/img.png')}}">
+                        {% endif %}
+                    <!-- </div> -->
+                    <form id="record" action="{{ url_for('record') }}" method="post">
+                        {% if var %}
+                        <button type="submit" name="start_rec" class="btn btn-larger btn-block" style="margin-top: 50px;">STOP RECORDING</button>
+                        {% else %}
+                        <button type="submit" name="start_rec" class="btn btn-larger btn-block">START RECORDING</button>
+                        {% endif %}
+                    </form>
+                </div>
+                <!-- <div class="col-lg-8  offset-lg-2" style="text-align: center;">
+                    <form id="record" action="{{ url_for('record') }}" method="post">
+                        {% if var %}
+                        <button type="submit" name="start_rec" class="btn btn-larger btn-block">STOP RECORDING</button>
+                        {% else %}
+                        <button type="submit" name="start_rec" class="btn btn-larger btn-block">START RECORDING</button>
+                        {% endif %}
+                    </form>
+                </div> -->
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='script.js')}}"></script>
+    </body>
+</html>
