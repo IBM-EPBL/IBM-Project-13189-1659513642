@@ -4,6 +4,7 @@ import argparse
 from skimage.transform import rotate
 
 backSub = cv2.createBackgroundSubtractorKNN()
+# backSub = cv.createBackgroundSubtractorMOG2()
 capture = cv2.VideoCapture(0)
 cnt=1
 if not capture.isOpened():
